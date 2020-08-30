@@ -26,23 +26,24 @@
 
         <LinearLayout
 
-            android:onClick="backToLoginPage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="backToLoginPage"
             android:padding="15dp">
 
             <ImageView
-
                 android:layout_width="24dp"
                 android:layout_height="24dp"
+                android:layout_marginTop="7dp"
                 android:src="@drawable/baseline_arrow_back_ios_24" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/josefin_sans_bold"
                 android:text="Back"
                 android:textColor="#191919"
                 android:textSize="20sp"
@@ -55,13 +56,13 @@
     <com.github.captain_miao.optroundcardview.OptRoundCardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linear_layout"
         app:optRoundCardCornerRadius="50dp"
         app:optRoundCardElevation="0dp"
-        android:layout_marginTop="30dp"
         app:optRoundCardLeftBottomCorner="false"
         app:optRoundCardLeftTopCorner="true"
         app:optRoundCardRightBottomCorner="false"
@@ -82,6 +83,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
+                    android:fontFamily="@font/josefin_sans_bold"
                     android:text="Create\naccount"
                     android:textColor="#191919"
                     android:textSize="25sp"
@@ -96,6 +98,7 @@
                     android:background="@android:color/transparent"
                     android:drawableRight="@drawable/user"
                     android:drawableTint="#696969"
+                    android:fontFamily="@font/josefin_sans_regular"
                     android:hint="Name"
                     android:padding="15dp"
                     android:textColor="#191919"
@@ -119,6 +122,7 @@
                     android:background="@android:color/transparent"
                     android:drawableRight="@drawable/at_sign"
                     android:drawableTint="#696969"
+                    android:fontFamily="@font/josefin_sans_regular"
                     android:hint="E-mail"
                     android:padding="15dp"
                     android:textColor="#191919"
@@ -141,6 +145,7 @@
                     android:background="@android:color/transparent"
                     android:drawableRight="@drawable/lock"
                     android:drawableTint="#696969"
+                    android:fontFamily="@font/josefin_sans_regular"
                     android:hint="Password"
                     android:padding="15dp"
                     android:textColor="#191919"
@@ -159,17 +164,18 @@
                     android:layout_height="50dp"
                     android:layout_gravity="bottom"
                     android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
                     android:layout_marginTop="90dp"
-                    android:layout_marginBottom="80dp"
                     android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="80dp"
                     android:background="@drawable/button_signin_bg"
+                    android:fontFamily="@font/josefin_sans_regular"
                     android:text="Sign in"
                     android:textAllCaps="false"
                     android:textColor="@android:color/white"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginRight="30dp" />
+                    android:textStyle="bold" />
 
 
             </LinearLayout>
